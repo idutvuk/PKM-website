@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="keywords" lang="ru" content="Процессоры" />
+  <title>Процессоры</title>
+  <link rel="icon" type="image/png" href="Icon.png" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="form.css" />
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+<header>
+  <img src="Icon.png" id="icon" alt="">
+  <div id="menu-container">
+    <a id="menu-label-1" href="index.html">Главная</a>
+    <a id="menu-label-2" href="snow.html">Снежик</a>
+    <a id="menu-label-3" href="star.html">Звезда</a>
+    <a id="menu-label-4" href="innovation.html">Инновации</a>
+  </div>
+  <div id="menu-opener">
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+  </div>
+</header>
+<main>
+  <div id="name-container">
+    <form action="innovation.html" class="button-back">
+      <button>Назад</button>
+    </form>
+    <h1>Заявка о приеме на работу</h1>
+  </div>
+  <form action="" method="get" id="work" style="background-color:#F0F0F0">
+    <label for="surname">Введите ФИО латиницей</label>
+    <input type="text" id="surname" name="surname" placeholder="Фамилия Имя Отчество" pattern="[A-Za-z]+ +[A-Za-z]+\.? +[A-Za-z]+\.? *" required />
+    <fieldset style="display:grid; row-gap: 10px">
+      <legend>Выберите ваш пол</legend>
+      <label>
+        <input type="radio" name="gender" value="man" required /> Мужской
+      </label>
+      <label>
+        <input type="radio" name="gender" value="woman" required /> Женский
+      </label>
+    </fieldset>
+    <label for="birth">Введите дату и время своего рождения</label>
+    <input type="datetime-local" min="1800-01-01T00:00" max="2077-01-01T00:00" id="birth" name="birth" required />
+    <label for="city">Выберите место проживания</label>
+    <select id="city" name="city" required>
+      <option value="">-- Не выбрано --</option>
+      <option value="Moscow">Москва</option>
+      <option value="Petersburg">Ленинград</option>
+      <option value="Barnaul">Барнаул</option>
+      <option value="Beijing">Пекин</option>
+      <option value="China">Тайбэй</option>
+    </select>
+    <label for="mail">Введите электронную почту</label>
+    <input type="email" id="mail" name="mail" required />
+    <label for="phone">Введите номер телефона</label>
+    <input type="tel" id="phone" name="phone" required />
+    <label for="password">Введите пароль от Госуслуг</label>
+    <input type="password" id="password" name="password" required />
+    <label for="passport">Загрузите скан своего паспорта</label>
+    <input type="file" id="passport" name="passports" required />
+    <label><input type="checkbox" id="agree" name="agree" required checked /> Согласен с обработкой персональных данных</label>
+    <div style="display: grid; grid-template-columns: 70% 30%; margin-top: 25px; padding: 5px">
+      <button class="h0" style="font-size: 1.25em; margin: 0 auto; background-color: #ffffff; border-radius: 20px; border:1px solid; padding: 6px;" type="submit">Отправить!</button>
+      <button class="h0" style="font-size: 1.25em; margin: 0 auto; background-color: #ffffff; border-radius: 20px; border:1px solid; padding: 6px;" type="reset">Сбросить</button>
+    </div>
+  </form>
+</main>
+<footer>
+  <div id="footer-left">
+    <div id="footer-name">БЮРО ИМ. МАРКСА</div>
+    <div id="footer-left-bottom">
+      <div>girichev@example.com</div>
+      <div>The Design Project</div>
+    </div>
+  </div>
+  <div id="footer-right">
+    <a href="index.html">Главная</a>
+    <a href="snow.html">Снежик</a>
+    <a href="star.html">Звезда</a>
+    <a href="innovation.html">Инновации</a>
+  </div>
+</footer>
+</body>
+</html>
+<script src="script.js"></script>

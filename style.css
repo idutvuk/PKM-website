@@ -1,0 +1,154 @@
+@font-face {
+    font-family: Montserrat-regular;
+    src: url("Montserrat/Montserrat-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: Montserrat-bold;
+    src: url("Montserrat/Montserrat-Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: Montserrat-italic;
+    src: url("Montserrat/Montserrat-Italic.ttf") format("truetype");
+}
+@font-face {
+    font-family: Montserrat-light;
+    src: url("Montserrat/Montserrat-Light.ttf") format("truetype");
+}
+html {
+    font-family: Montserrat-regular, serif;
+    overflow-x: hidden;
+}
+body {
+    margin: 0;
+}
+header {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    position: fixed;
+    width: 60vw;
+    z-index: 1;
+    font-family: Montserrat-bold, serif;
+    font-size: 1em;
+    background-color: #E0EAF3;
+    margin: 0;
+    height: 16vh;
+    padding: 0 20vw;
+    border-bottom: 1px solid #292526;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+}
+
+#menu-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 2vw;
+}
+
+#menu-container > a {
+    text-decoration: none;
+    color: black;
+}
+
+#menu-opener {
+    display: none;
+}
+
+main {
+    position: relative;
+    top: 16vh;
+}
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    padding: 60px 5vw;
+    grid-template-columns: 2fr 1fr;
+    font-family: Montserrat-bold, serif;
+    background-color: #1D1D1D;
+    color: white;
+    align-items: center;
+    position: relative;
+    top: 16vh;
+}
+#icon {
+    cursor: pointer;
+    height: 10vh;
+}
+#footer-left {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+#footer-name {
+    font-size: 2em;
+}
+#footer-left-bottom {
+    margin-top: 10px;
+    font-family: Montserrat-regular, serif;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    font-size: 0.8em;
+}
+#footer-right {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px
+}
+#footer-right a {
+    text-decoration: none;
+    color: white;
+}
+.random-text:after {
+    content: "In aedificiis magnis, ubi scientia et industria coniunguntur, fabricae surgunt. Haec loca, ubi machinae ingentes laborant, operarios congregant, et producta variis operibus concipiuntur, fundamenta progressus moderni continent. Fabricae non solum exemplum sunt ingenii humani, sed etiam testes potentiae societatis industrialis. In primis, fabricae sunt machinariae multarum operum et operantium. Turbines rotantur, machinae clangunt, et motus agitantur, omnia periti ingenii artifice. In his locis, ingentia instrumenta suam vim et potentiam expendunt, ut productos variegatos et utilitates generent. Operarii, viri et feminae, una cum machinis cooperantur, ut operas magno labore perficiant. Non solum manus hominum, sed etiam scientia et technologia fabriles loca pervagantur. Scientia et inventio, tamquam lumina dirigentia, iterum iterumque inveniunt novas vias ad efficaciam et efficientiam. Proventus technologicus fabricas elevat ad altitudines novas, ubi producta meliora et in tempore breviore creantur. Fabricae loca non tantum producta efficiunt, sed etiam hominum coetus. Societates complexae eodem momento congregationem suam in fabricis habent. Hominum multitudo diversa, ex variis ordinibus, unum propositum commune complexum coagulat: progressum et prosperitatem societatis. Sed, cum potentia magnifica est, ita etiam responsabilitas. In fabricis, cura est ut res communes serventur, et pollutio minuatur. Ingenium et industria non solum ad profectum, sed etiam ad custodiam communi bono destinantur. Sic ut, inter coetum hominum et potentiam machinarum, harmonia et moderatio conservantur. Haec sunt fabricae, loca ubi humanitas et scientia manum in manu coniungunt, ubi progressus et prosperitas seruntur, ubi industriam et inventio quasi unum efficiunt. In fabricis, humanitas suum destituit ingenium ad creandam mundum novum, ubi opera manuum hominum et potentia machinarum concorditer conspirant ad meliorem et feliciorem societatem efficiendam.";
+}
+@media screen and (max-width: 800px) {
+    header {
+        height: 60px;
+        width: 100vw;
+        padding: 0;
+    }
+    #menu-container {
+        align-self: start;
+        position: fixed;
+        padding: 20vh 20vw;
+        display: flex;
+        flex-direction: column;
+        width: 60vw;
+        height: 60vh;
+        background: #CCCCCC;
+        font-size: 6vw;
+        gap: 3vw;
+        translate: 0 -100vh;
+        transition: translate 0.5s;
+    }
+    #menu-opener {
+        cursor: pointer;
+        position: absolute;
+        width: 40px;
+        height: 30px;
+        right: 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+    .menu-line {
+        width: 40px;
+        height: 8px;
+        background-color: black;
+        border-radius: 40px;
+        transition: rotate 0.5s, translate 0.5s, opacity 0.5s;
+    }
+    main {
+        top: 60px;
+    }
+    footer {
+        top: 60px;
+    }
+    #icon {
+        height: 50px;
+    }
+    #footer-right {
+        translate: 30vw 0;
+    }
+}

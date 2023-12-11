@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="keywords" lang="ru" content="Процессоры" />
+  <title>Процессоры</title>
+  <link rel="icon" type="image/png" href="Icon.png" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="snow.css" />
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+<header>
+  <img src="Icon.png" id="icon" alt="">
+  <div id="menu-container">
+    <a id="menu-label-1" href="index.html">Главная</a>
+    <a id="menu-label-2" href="snow.html">Снежик</a>
+    <a id="menu-label-3" href="star.html">Звезда</a>
+    <a id="menu-label-4" href="innovation.html">Инновации</a>
+  </div>
+  <div id="menu-opener">
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+  </div>
+</header>
+<main>
+  <img id="background-snow" src="Background-Snow.jpg">
+  <img id="cart-open" src="Cart.png" onclick="OpenCart()">
+  <div id="content">
+    <div id="img-container">
+      <img id="pr-snow" src="PrSnow.jpg">
+    </div>
+    <div id="content-block">
+      <div id="content-name"></div>
+      <div id="shop">
+        <div id="shop-name">Снежик</div>
+        <div id="item-1" class="item">
+          <img src="pr/pr1.jpg" class="item-img">
+          <div class="item-description">
+            <div class="item-name">Процессор "Снежик-Вьюга"</div>
+            <div class="item-desc">Для начинающих робототехников. Умеет складывать и вычитать числа в пределах 8. Ставится во все школьные компьютеры</div>
+            <div class="item-price">0.1RUB</div>
+            <div class="item-add" onclick="AddToCart(1)">Добавить в корзину</div>
+          </div>
+        </div>
+        <div id="item-2" class="item">
+          <img src="pr/pr2.jpg" class="item-img">
+          <div class="item-description">
+            <div class="item-name">Процессор "Снежик-Метель"</div>
+            <div class="item-desc">Создан в рамках программы "Бэкдор в каждый дом". Способен для решения любых бытовых задач. Имеет в себе оцифрованное сознание Андропова</div>
+            <div class="item-price">10RUB</div>
+            <div class="item-add" onclick="AddToCart(2)">Добавить в корзину</div>
+          </div>
+        </div>
+        <div id="item-3" class="item">
+          <img src="pr/pr3.jpg" class="item-img">
+          <div class="item-description">
+            <div class="item-name">Процессор "Снежик-Буран"</div>
+            <div class="item-desc">Продвинутый процессор нового поколения. Используется в сложных инженерных расчётах. С ним ваши игры (например, "волк ловит подорожавшие яйца") будут летать на всех 22КвС!!<br>Процессор имеет в себе оцифрованное сознание Сталина, Ленина и Хрущёва</div>
+            <div class="item-price">100RUB</div>
+            <div class="item-add" onclick="AddToCart(3)">Добавить в корзину</div>
+          </div>
+        </div>
+        <div id="item-4" class="item">
+          <img src="pr/pr4.jpg" class="item-img">
+          <div class="item-description">
+            <div class="item-name">Процессор "Снежик-Сибирь"</div>
+            <div class="item-desc">Мощнейшее решение для нейронных сетей. Содержит в себе цифровую копию всего состава КПСС. Также используется в кинематографе для генерации "soviet vibes" на постпродакшне</div>
+            <div class="item-price">3400RUB</div>
+            <div class="item-add" onclick="AddToCart(4)">Добавить в корзину</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<footer>
+  <div id="footer-left">
+    <div id="footer-name">БЮРО ИМ. МАРКСА</div>
+    <div id="footer-left-bottom">
+      <div>girichev@skiff.com</div>
+      <div>Дизайнерский проект</div>
+    </div>
+  </div>
+  <div id="footer-right">
+    <a href="index.html">Главная</a>
+    <a href="snow.html">Снежик</a>
+    <a href="star.html">Звезда</a>
+    <a href="innovation.html">Инновации</a>
+  </div>
+</footer>
+</body>
+</html>
+<script src="script.js"></script>
+<script src="snow.js"></script>
